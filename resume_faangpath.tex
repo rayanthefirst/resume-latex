@@ -1,0 +1,46 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+% Components
+\include{components/skills}
+\include{components/education}
+\include{components/projects}
+\include{components/work_experience}
+\include{components/interests}
+\include{components/whitetext}
+
+\usepackage[left=0.3 in,top=0.3in,right=0.3 in,bottom=0.3in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[itemize]{label=\textcolor{black}{\textbullet}}
+
+\definecolor{mygray}{RGB}{75, 75, 75}
+\color{mygray} % Set the default color of the text to gray
+\definecolor{BLACK}{rgb}{0,0,0}
+% \newcommand{\highlight}[1]{\textcolor{black}{\textbf{#1}}} % Command to make text black and bold - defined in resume.cls file
+\definecolor{TEAL}{rgb}{0.0,0.5,0.5}
+\newcommand{\tealcolor}[1]{\textcolor{TEAL}{\textbf{#1}}}
+
+\usepackage{setspace}
+\setstretch{0.95}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\name{\highlight{Rayan Ahmad}} % Your name
+\address{\href{mailto:r29ahmad@uwaterloo.ca}{\tealcolor{\faEnvelopeO\enspace \underline{r29ahmad@uwaterloo.ca}}} \highlight{$|$} \href{https://linkedin.com/in/rayan-ahmad29}{\tealcolor{\faLinkedinSquare\enspace \underline{LinkedIn}}} \highlight{$|$} \href{https://github.com/rayanthefirst}{\tealcolor{\faGithub\enspace \underline{GitHub}}} \highlight{$|$} \href{https://rayanthefirst.github.io}{\tealcolor{\faGlobe\enspace \underline{Portfolio}}}}
+
+
+\begin{document}
+\skills
+% \education
+\work
+\education
+% \projects
+\interests
+% \whiteText
+\end{document}
